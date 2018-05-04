@@ -26,7 +26,7 @@
 		<ul>
 			<li><a href = "http://personalonlinesocialnetwork.com "class="active" href="#posn" target="_blank">About POSN</a></li>
 			<li><a href = "./login.html" class="active" href="#home">Home</a></li>
-			<li><a href="#" onclick="signOut();">Sign out</a></li>
+			<li><button id="signout-button" onclick="handleSignOutClick()">Sign Out</button></li>
 
 		</ul>
 
@@ -42,21 +42,27 @@
 		<div class = "login">
 			<div class= "boxed">
 		
-				<center><div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" ></div>
+				<center> <button id="signin-button" onclick="handleSignInClick()">Sign In</button><!--<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" ></div>-->
 				<script type = "text/javascript" src="Posting.js"></script>
 				<a href="./Posting.html"><input type="button" value="Enter POSN" /></a></center>
 
 		</div>	
 
-
-
-		<!-- scripts ---> 
-		<script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+	<!-- scripts ---> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="jquery-3.3.1.min.js"></script> <!-- This is like the iostream of javascript if I had to equate it -->
 		<script type="text/javascript" src="jquery-ui.js"></script> <!-- Helps with animations -->
 		<script type="text/javascript" src="jquery.form.js"></script> <!-- Helps with animations -->
-		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script type = "text/javascript" src="./Posting.js"></script>
+		<script async defer src="https://apis.google.com/js/api.js"onload="this.onload=handleClientLoad()"onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+
+		<!-- scripts
+		<script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script> <!-- This is like the iostream of javascript if I had to equate it
+		<script type="text/javascript" src="jquery-ui.js"></script> <!-- Helps with animations
+		<script type="text/javascript" src="jquery.form.js"></script> <!-- Helps with animations
+		<script src="https://apis.google.com/js/platform.js" async defer></script> --->
 
 	</body> 
 			
