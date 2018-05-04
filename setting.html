@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+	<head class = "text-right"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>POSN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="./Posting.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	
+	</head>
+	
+			<!--Header with Nav -->
+		<header class="text-right">
+			<form class="text-left search" method="GET">
+				<input name="q" type="text" placeholder="Search..">
+			</form>
+			
+			
+			 <div class="menu-icon">
+            <div class="dropdown">
+                <span class="dropdown-toggle" role="button" id="dropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <span class="hidden-xs hidden-sm">Settings</span> <i class="fa fa-cogs" aria-hidden="true"></i>
+                </span>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownSettings">
+                    <li>
+                        <a href="settings.html" title="Settings" >
+                            <div class="col-xs-4">
+                                <i class="fa fa-wrench" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-8 text-left">
+                                <span>Settings</span>
+                            </div>
+                        </a>
+                    </li>
+              
+                    <li>
+                        <a href="./login.html" title="Settings">
+                            <div class="col-xs-4">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-8 text-left">
+                                <span>Logout</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	
+    
+			<div class="second-icon dropdown menu-icon">
+				<span class="dropdown-toggle" role="button" id="dropdownNotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					<span class="hidden-xs hidden-sm">Notifications</span> <i class="fa fa-bell-o" aria-hidden="true"></i> <span class="badge">2</span>
+				</span>
+				<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownNotification">
+					<li class="new-not">
+						
+					</li>
+					<li role="separator" class="divider"></li>
+					<li><a href="https://socialyte.codeplus.it/personal-profile.html#" title="All notifications">All Notifications</a></li>
+				</ul>
+			</div>
+			
+			<div class="second-icon menu-icon">
+				<span><a href=# title="Profile"><span class="hidden-xs hidden-sm">Profile</span> <i class="fa fa-user" aria-hidden="true"></i></a>
+				</span>
+			</div>
+			<div class="second-icon menu-icon">
+				<span><a href="./Posting.html" title="Wall"><span class="hidden-xs hidden-sm">Wall</span> <i class="fa fa-database" aria-hidden="true"></i></a>
+				</span>
+			</div>
+		</header>
+	
+	
+	
+
+	<body>
+
+		<div id="setting-container" class="container-fluid container-posts">
+			<div class="row">
+				<div class="modal-container">
+					<form class="form-horizontal">
+						<div class="bg-white pinside40 mb30">
+							
+										<!-- Text input-->
+							<div class="add_listing_info" id = "add_listing_info">
+								<h3>Personal Information</h3>
+								<div class="form-group" >
+									<img id="previewHolder" class="profile-img"  style="width:128px;height:128px;" />
+						
+									<button id ="photoedit" class = "stg-btn" type = "button" style= "float:right"> edit</button>
+									
+										<div id = "Photo" class = "Photo">
+										
+										 <input type="file" name="filePhoto" value="" id="filePhoto" class="required borrowerImageFile" data-errormsg="PhotoUploadErrorMsg">
+									</div>
+							
+								</div>
+								
+								
+								
+								<div class="form-group" >
+									<label class="col-md-4 control-label" for="name">Username<span class="required">*</span></label>
+									<span class= "username" > </span>
+									<button id ="uedit" class = "stg-btn" type = "button" style= "float:right"> edit</button>
+									<div id = "uname" class="uname">
+									
+										<input id = "user" name = "post" type="text" autocomplete="off" class="form-control" placeholder="Username"></input>			
+										
+									</div>
+									
+							
+								</div>
+								
+								<div class="form-group" >
+									<label class="col-md-4 control-label" for="name">First Name<span class="required">*</span></label>
+									<span class= "firstname" > </span>
+									<button id ="fedit" class = "stg-btn" type = "button" style= "float:right"> edit</button>
+									<div id = "fname" class="fname">
+									
+										<input id = "first" name = "post" type="text" autocomplete="off" class="form-control" placeholder="First Name"></input>			
+										
+									</div>
+									
+							
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label" for="name">Last Name<span class="required">*</span></label>
+									<span class= "lastname" > </span>
+									<button id ="ledit"  class = "stg-btn" type = "button"style= "float:right"> edit</button>
+									<div id = "lname" class="lname">
+									
+										<input id = "last" name = "post" type="text" autocomplete="off" class="form-control" placeholder="Last Name"></input>			
+										
+									</div>
+									
+							
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label" for="name">Birthday<span class="required">*</span></label>
+									<span class= "birthday" > </span>
+									<button id ="bedit"  class = "stg-btn" type = "button"style= "float:right"> edit</button>
+									<div id = "bname" class="lname">
+									
+										<input id = "birth" name = "post" type="text" autocomplete="off" class="form-control" placeholder="Birthday"></input>			
+										
+									</div>
+									
+							
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label" for="name">Email<span class="required">*</span></label>
+									<span class= "email" > </span>
+									<button id ="eedit"  class = "stg-btn" type = "button" style= "float:right"> edit</button>
+									<div id = "ename" class="lname">
+									
+										<input id = "em" name = "post" type="text" autocomplete="off" class="form-control" placeholder="Email"></input>			
+										
+									</div>
+									
+							
+								</div>
+								<div class="form-group">
+									<label class="col-md-4 control-label" for="name">Phone<span class="required">*</span></label>
+									<span class= "phone" > </span>
+									<button id ="pedit"  class = "stg-btn" type = "button" style= "float:right"> edit</button>
+									<div id = "pname" class="lname">
+									
+										<input id = "ph" name = "post" type="text" autocomplete="off" class="form-control" placeholder="Phone"></input>			
+										
+									</div>
+									
+							
+								</div>
+							
+								
+
+								
+							</div>
+							
+							
+							
+
+							<!-- Button that handles u-->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="submit"></label>
+								<div class="col-md-4">
+									<button id="submit" name="submit" class="submit" type = "button">Update Profile</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				
+			</div>
+		</div>
+				
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src ="./Posting.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script async defer src="https://apis.google.com/js/api.js"
+		onload="this.onload=handleClientLoad()"
+		onreadystatechange="if (this.readyState === 'complete') this.onload()">
+		
+		</script>
+
+
+	</body>
+</html>
